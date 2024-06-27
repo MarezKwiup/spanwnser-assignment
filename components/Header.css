@@ -1,0 +1,58 @@
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d{
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo {
+    width: 400px;
+    height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.login-button {
+    height: 40px;
+    width: 80px;
+  background-color: white;
+  border-color: black;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:15px;
+}
+
+.notif-button{
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-color: black;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:15px;
+  background: #f0f0f0 url('../../bell-icon.svg');
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}

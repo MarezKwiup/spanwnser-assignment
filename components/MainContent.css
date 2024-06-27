@@ -1,0 +1,62 @@
+.profile-card {
+    height: 20rem;
+    width: 100%;
+    background-color: #3E404ECC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.text-content{
+    width: 50%;
+    padding: 20px;
+}
+
+.h{
+    color: #FFFFFFCC;
+    padding: 0%;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.ello{
+    padding: 0%;
+    font-size: 25px;
+}
+
+.name{
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.description{
+    color: #B2D4FE;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    background-color: #F6EFE7;
+    color: #41464F;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+    background: radial-gradient(68.94% 68.94% at 68.94% 25.47%, #FCB258 0%, white 100%);
+    border-radius: 100%;
+}
+
+.image img{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
