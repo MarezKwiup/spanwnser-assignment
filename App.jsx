@@ -8,7 +8,7 @@ import ScrollLinks from './components/ScrollLinks';
 function App() {
   return (
     <div className="app">
-      <div className="content">
+      <div className="content" id='content'>
         <Header/>
         <div className="fading-dotted-border"></div>
         <main className="main-content">

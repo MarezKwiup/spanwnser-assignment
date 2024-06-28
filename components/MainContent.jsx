@@ -1,9 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 import "./MainContent.css";
 import bellUrl from '../../public/bell2.svg'
 import dpUrl from '../../public/dp.jpg'
+import Modal from "./Modal";
 
 function MainContent() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSubscribeClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <div className="profile-card">
       <div className="text-content">
@@ -18,7 +28,7 @@ function MainContent() {
           more than 30 words, basically the bio caption will come here.
         </p>
         <div className="buttons">
-          <button className="subscribe">Subscribe me
+          <button onClick={handleSubscribeClick} className="subscribe">Subscribe me
             <img src={bellUrl} alt='bell logo'/>
           </button>
           <button>Custom action</button>
@@ -27,6 +37,7 @@ function MainContent() {
       <div className="image">
         <img src={dpUrl} alt="Omkar Ajagunde" />
       </div>
+      <Modal isOpen={showModal} onClose={handleCloseModal}/>
     </div>
   );
 }
